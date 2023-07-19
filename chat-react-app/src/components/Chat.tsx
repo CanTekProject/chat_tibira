@@ -12,6 +12,7 @@ type IChatProps = {
 
 export default function Chat({ socket }: IChatProps) {
   const navigation = useNavigate();
+
   const [roomSelected, setRoomSelected] = useState<number>(0);
   const [messages, setMessages] = useState<IMessage[]>([]);
   const [text, setText] = useState<string>("");
